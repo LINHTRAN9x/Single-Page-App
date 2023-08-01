@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body>
+     <script type="text/ng-template" id="home.html">
+        <h1>Home Single Page</h1>
+        <h3>{{message}}</h3>
+     </script>
+     <script type="text/ng-template" id="blog.html">
+        <h1>Blog Single Page</h1>
+        <h3>{{message}}</h3>
+     </script>
+     <script type="text/ng-template" id="about.html">
+        <h1>About Single Page</h1>
+        <h3>{{message}}</h3>
+     </script>
+
+     <a href="#/">Home</a>
+     <a href="#/blog">Blog</a>
+     <a href="#/about">About</a>
+     <div ng-view></div>
+
+     
+     
+<script src="app.js"></script>
+    
+</body>
+</html>
